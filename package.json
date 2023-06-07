@@ -20,17 +20,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "lint": "eslint -c .eslintrc --ext .js,.jsx .",
+    "lint:fix": "npm run lint -- --fix"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sdobnaya/ghp_test.git"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
